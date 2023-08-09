@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.container {
+    width: 340px;
+    border-radius: 15px;
+    background-color: hsl(213, 19%, 18%);
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.star-icon {
+    width: 3em;
+    height: 3em;
+    background-color: hsla(216, 12%, 54%, 0.150);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+
+    margin-bottom: .5em;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+    line-height: 1.5em;
+    font-size: 0.9375rem;
+}
+
+.rates  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate-button {
+    border: none;
+    border-radius: 50%;
+
+    width: 4em;
+    height: 4em;
+
+    background-color: hsla(216, 12%, 54%, 0.150);
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    transition: all 0.15s;
+}
+
+.rate-button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+.rate-button:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#subB {
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+
+    height: 3em;
+    width: 100%;
+
+    color: white;
+    font-family: 'Overpass', sans-serif;    
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    transition: all 0.15s;
+}
+
+#subB:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+
+
+/* THANK YOU CARD */
+.thanks-container {
+    align-items: center;
+    text-align: center;
+
+    display: none;
+}
+
+.thanks-selected {
+    background-color: hsla(216, 12%, 54%, 0.150);
+    color: hsl(25, 97%, 53%);
+
+    padding: .4em 1.5em;
+
+    border-radius: 20px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .rate-button {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
